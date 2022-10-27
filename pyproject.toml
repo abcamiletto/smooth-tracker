@@ -1,0 +1,44 @@
+[build-system]
+requires      = ["setuptools>=62.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smooth-tracker"
+version = "1.0.1"
+description = "A multi-frame tracker for humans"
+readme = "README.md"
+authors = [{ name = "Andrea Boscolo Camiletto", email = "abcamiletto@gmail.com" }]
+dependencies = [
+    "numpy",
+]
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+dev = ["black", "bumpver", "pytest"]
+docs = ["sphinx",
+        "sphinx-autobuild",
+        "sphinx-rtd-theme",
+        "sphinxcontrib.spelling",
+        "sphinx-autodoc-typehints",
+        "sphinx_copybutton"
+]
+
+[project.urls]
+Homepage = "https://github.com/abcamiletto/smooth-tracker"
+
+[tool.setuptools]
+packages = ["smooth_tracker"]
+
+[tool.bumpver]
+current_version = "1.0.1"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "bump version {old_version} -> {new_version}"
+commit = true
+tag = true
+push = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'current_version = "{version}"',
+    'version = "{version}"',
+]
