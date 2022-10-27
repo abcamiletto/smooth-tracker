@@ -5,6 +5,14 @@ Designed to be simple yet effective, smooth tracker allows you to smooth you sin
 
 It implements a second order linear filter, which is a simple way to smooth your predictions.
 
+## Installation
+
+The package is available on pypi, so you can install it with pip:
+
+```bash
+    pip install smooth-tracker
+```
+
 ## Usage Example
 
 Down below we have a quick overview of example scripts. For more details, please refer to the [documentation](https://smooth-tracker.readthedocs.io/en/latest/).
