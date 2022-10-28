@@ -1,0 +1,1 @@
+from .fading import FadingFilter

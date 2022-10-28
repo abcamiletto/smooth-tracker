@@ -39,6 +39,8 @@ while True:
 
 ### Tracking multiple 2D/3D point
 
+NB: This is not yet implemented
+
 Let's say you have a prediction of multiple points in 2D. Let's suppose we have a way to recognize them and associate them with a name. We can use a dictionary to store them.
 
 
@@ -60,6 +62,8 @@ while True:
 
 ### Tracking multiple 2D/3D point, without names
 
+NB: This is not yet implemented
+
 In the case we have no way of identifying the prediction, we can let the tool trace back the correspondance based on the previous positions.
 
 ```python
@@ -76,3 +80,10 @@ while True:
     smoothed_prediction = tracker.update(predictions)
 
 ```
+
+
+### TODOs
+
+- [ ] Add a way to track multiple points with names
+- [ ] Add a way to track multiple points without names
+- [ ] Does it make enough to use a KF? Answer plz
